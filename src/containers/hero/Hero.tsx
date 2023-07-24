@@ -3,8 +3,12 @@ import "./Hero.scss";
 import edgeIcon from "../../assets/edge.svg";
 import lightHeroImage from "../../assets/home-hero.webp";
 import darkHeroImage from "../../assets/home-hero-dark.webp";
+import { useContext } from "react";
+import { themeContext } from "../../contexts/ThemeContext";
 
 const Hero: React.FC = () => {
+  const { theme, setTheme } = useContext(themeContext);
+
   return (
     <div className="hero">
       <div className="hero__left">
@@ -21,7 +25,10 @@ const Hero: React.FC = () => {
       </div>
 
       <div className="hero__image">
-        <img src={lightHeroImage} alt="hero image" />
+        <img
+          src={theme === "light" ? lightHeroImage : darkHeroImage}
+          alt="hero image"
+        />
       </div>
     </div>
   );

@@ -1,0 +1,26 @@
+.newsletter {
+  padding: 50px var(--side-padding);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  background-color: var(--bg-color);
+
+  h4 {
+    //   padding-bottom: 15px;
+    line-height: 1.3;
+    font-size: var(--md-font);
+
+    @media screen and (max-width: 640px) {
+      font-size: var(--lg-font);
+    }
+  }
+
+  p {
+    font-size: var(--sm-font);
+
+    @media screen and (max-width: 640px) {
+      font-size: var(--base-font);
+    }
+  }
+}

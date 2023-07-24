@@ -1,0 +1,48 @@
+.applications {
+  padding: 50px 0;
+  background-color: var(--gray-200);
+
+  // @media (prefers-color-scheme: dark) {
+  //   background-color: var(--gray-200);
+  // }
+
+  > div {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 var(--side-padding);
+  }
+
+  &__header {
+    text-align: center;
+    padding-bottom: 20px;
+
+    h4 {
+      padding-bottom: 15px;
+      line-height: 1.3;
+      font-size: var(--md-font);
+
+      @media screen and (max-width: 640px) {
+        font-size: var(--lg-font);
+      }
+    }
+
+    p {
+      font-size: var(--sm-font);
+
+      @media screen and (max-width: 640px) {
+        font-size: var(--base-font);
+      }
+    }
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    div {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

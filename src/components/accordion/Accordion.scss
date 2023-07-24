@@ -7,18 +7,36 @@
     justify-content: space-between;
     cursor: pointer;
     padding: 5px 0;
+
+    // &.active {
+    //   color: var(--primary-color);
+    // }
+
+    // &:hover {
+    //   color: var(--primary-color);
+    // }
   }
 
   &__links {
-    display: none;
-    // padding-left: 10px;
+    // display: none;
+    padding-left: 10px;
 
     a {
       padding: 5px;
+
       &:hover {
         color: var(--primary-color);
         background-color: rgba(4, 125, 214, 0.1);
       }
+    }
+  }
+}
+
+.App.dark {
+  .accordion__links {
+    a:hover {
+      color: var(--primary-text-color);
+      background-color: rgba(255, 255, 2555, 0.1);
     }
   }
 }
