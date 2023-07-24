@@ -11,6 +11,7 @@ import Newsletter from "./containers/newsletter/Newsletter";
 import Swag from "./containers/swag/Swag";
 import { themeContext } from "./contexts/ThemeContext";
 import { navMenuContext } from "./contexts/NavMenuContext";
+import SummaryVideo from "./containers/summaryVideo/SummaryVideo";
 
 const App: React.FC = () => {
   const { theme } = useContext(themeContext);
@@ -27,6 +28,7 @@ const App: React.FC = () => {
         <Hero />
         <LearnMore />
         <GetStarted />
+        <SummaryVideo />
         <Applications />
         <Swag />
         <Newsletter />

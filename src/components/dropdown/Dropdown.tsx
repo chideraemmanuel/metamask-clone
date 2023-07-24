@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { NavigationDropdownTypes } from "../../constants";
 import "./Dropdown.scss";
 import { FiChevronDown } from "react-icons/fi";

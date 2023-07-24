@@ -6,7 +6,7 @@ interface Props {
   transparent?: true;
 }
 
-const Button: React.FC<Props> = ({ text, icon, transparent }) => {
+const Button: React.FC<Props> = ({ text, transparent }) => {
   return (
     <a href="#" className={transparent ? "button transparent" : "button"}>
       <span>{text}</span>

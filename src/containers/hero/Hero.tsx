@@ -1,4 +1,3 @@
-import Button from "../../components/button/Button";
 import "./Hero.scss";
 import edgeIcon from "../../assets/edge.svg";
 import lightHeroImage from "../../assets/home-hero.webp";
@@ -7,7 +6,7 @@ import { useContext } from "react";
 import { themeContext } from "../../contexts/ThemeContext";
 
 const Hero: React.FC = () => {
-  const { theme, setTheme } = useContext(themeContext);
+  const { theme } = useContext(themeContext);
 
   return (
     <div className="hero">

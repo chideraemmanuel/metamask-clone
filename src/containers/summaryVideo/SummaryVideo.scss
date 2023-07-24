@@ -1,0 +1,25 @@
+.summary-video {
+  padding: 50px var(--side-padding);
+  max-width: var(--max-width);
+  margin: 0 auto;
+  text-align: center;
+
+  &__header {
+    padding-bottom: 30px;
+    line-height: 1.3;
+    font-size: var(--md-font);
+
+    @media screen and (max-width: 640px) {
+      font-size: var(--lg-font);
+    }
+  }
+
+  &__video {
+    aspect-ratio: 16 / 9;
+
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
