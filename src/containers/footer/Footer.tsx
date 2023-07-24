@@ -6,9 +6,9 @@ import "./Footer.scss";
 const Footer: React.FC = () => {
   return (
     <div className="footer">
-      <div className="footer__logo">
+      <a href="#" className="footer__logo">
         <Logo />
-      </div>
+      </a>
 
       <div className="footer__links">
         {footerLinks.map((link, index) => (

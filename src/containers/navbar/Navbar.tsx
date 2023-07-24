@@ -16,7 +16,9 @@ const Navbar: React.FC = () => {
 
   return (
     <div className="navbar">
-      <Logo />
+      <a href="#" className="navbar__logo">
+        <Logo />
+      </a>
 
       <div className="navbar__right">
         <DesktopNavLinks />
