@@ -7,7 +7,7 @@ import { FiMenu } from "react-icons/fi";
 
 const Navbar: React.FC = () => {
   const { navMenuActive, setNavMenuActive } = useContext(navMenuContext);
-  const { activeAccordion, setActiveAccordion } = useContext(navMenuContext);
+  const { setActiveAccordion } = useContext(navMenuContext);
 
   const handleClick = () => {
     setNavMenuActive((prev: boolean) => !prev);

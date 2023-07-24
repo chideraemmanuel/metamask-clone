@@ -3,7 +3,6 @@ import Button from "../../../../components/button/Button";
 import ThemeToggle from "../../../../components/themeToggle/ThemeToggle";
 import { navigationDropdownConstants } from "../../../../constants";
 import "./MobileNavLinks.scss";
-import { FiMenu } from "react-icons/fi";
 
 const MobileNavLinks: React.FC = () => {
   return (
