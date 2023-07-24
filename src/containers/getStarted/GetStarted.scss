@@ -1,0 +1,13 @@
+.get-started {
+  background-color: #242424;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 30px var(--side-padding);
+
+  h4 {
+    color: #fff;
+    font-size: var(--md-font);
+  }
+}

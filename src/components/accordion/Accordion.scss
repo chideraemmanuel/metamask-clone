@@ -1,0 +1,24 @@
+.accordion {
+  font-size: var(--base-font);
+
+  &__trigger {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 5px 0;
+  }
+
+  &__links {
+    display: none;
+    // padding-left: 10px;
+
+    a {
+      padding: 5px;
+      &:hover {
+        color: var(--primary-color);
+        background-color: rgba(4, 125, 214, 0.1);
+      }
+    }
+  }
+}

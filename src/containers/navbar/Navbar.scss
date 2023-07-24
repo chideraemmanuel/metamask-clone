@@ -1,0 +1,38 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  //   border: 1px solid blue;
+  padding: 20px 0;
+  font-size: var(--sm-font);
+
+  @media screen and (max-width: 640px) {
+    font-size: var(--base-font);
+  }
+
+  &__right {
+    //
+
+    &--button {
+      font-size: var(--md-font);
+      align-items: center;
+      cursor: pointer;
+      border: none;
+      background-color: transparent;
+      padding: 5px;
+      border-radius: 5px;
+      box-sizing: content-box;
+      display: none;
+
+      &.active {
+        background-color: rgb(219, 219, 221);
+      }
+
+      @media screen and (max-width: 992px) {
+        display: flex !important;
+      }
+    }
+  }
+}

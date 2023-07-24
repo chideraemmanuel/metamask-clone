@@ -1,0 +1,34 @@
+.mobile-navigation {
+  // border: 1px solid red;
+  background-color: var(--bg-color);
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  font-size: var(--base-font) !important;
+  display: none;
+
+  @media screen and (max-width: 992px) {
+    display: block !important;
+  }
+
+  a {
+    display: block;
+  }
+
+  &__links {
+    // max-width: var(--max-width);
+    padding: 0 var(--side-padding);
+    // background-color: rebeccapurple;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    > * {
+      width: 100%;
+    }
+  }
+}

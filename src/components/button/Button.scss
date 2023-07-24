@@ -1,0 +1,21 @@
+.button {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 40px;
+  transition: 0.2s ease;
+  text-transform: capitalize;
+  text-align: center;
+  font-size: var(--sm-font);
+
+  @media screen and (max-width: 640px) {
+    font-size: var(--base-font);
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      background-color: var(--primary-color-dark);
+    }
+  }
+}
